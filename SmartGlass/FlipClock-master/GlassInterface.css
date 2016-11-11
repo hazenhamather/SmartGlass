@@ -1,0 +1,80 @@
+.body {
+    background-color: black;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    /*background-size: contain;*/
+}
+.rightThird {
+    float:right;
+    width:30%;
+}
+.middleThird {
+    width: 35%;
+    float:right;
+    height: 100%;
+}
+.leftThird {
+    float:right;
+    width: 30%;
+    padding-top: 3em;
+    background-size: contain;
+}
+
+
+p,h2 {
+    color: white;
+}
+#welcomeMessage {
+    font-size: 2em;
+    text-align: center;
+}
+.clockDiv {
+    /*float: right;*/
+    position: relative;
+}
+.newsFeed {
+    /*float:left;*/
+    position: relative;
+    /*background-size: contain;*/
+}
+#currentWeather {
+    font-size: 0.9em;
+}
+.currentWeatherDiv {
+    /*float: right;*/
+    margin:0 auto;
+    /*position: relative;*/
+    /*border-style: solid;*/
+    /*border-width: 0.1em;*/
+    /*border-color:white;*/
+}
+#icon.resize {
+    width:150px;
+    height: auto;
+}
+.currentTemp {
+    font-weight: bold;
+    /*font-size: 1.5em;*/
+}
+.bottomDiv {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    /*margin: auto;*/
+}
+.newsHeader {
+    color: white;
+    font-size: 15px;
+}
+.news {
+    color: white;
+    font-size: 12px;
+}
+/*.quoteOfTheDay {*/
+    /*color:white;*/
+    /*text-align: center;*/
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
+/*}*/

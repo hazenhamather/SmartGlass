@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather API</title>
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.16/jquery.min.js"/>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="GlassInterface.js"></script>
+    <link rel="stylesheet" type="text/css" href="GlassInterface.css" media="screen"/>
+    <link rel="stylesheet" href="compiled/flipclock.css">
+    <script src="compiled/flipclock.js"></script>
+
+
+</head>
+<body class=body>
+<div class = rightThird>
+     <div class=clockDiv>
+        <div class="clock" style="margin:2em;"></div>
+
+        <script type="text/javascript">
+            var clock;
+
+            $(document).ready(function () {
+                clock = $('.clock').FlipClock({
+                    clockFace: 'TwelveHourClock',
+                    showSeconds: false
+                });
+            });
+        </script>
+    </div>
+    <div class=currentWeatherDiv>
+        <span class = city></span>var counter = 0;
+
+        <p><span class=currentTemp></span> &#8457    <span class = currentConditions></span></p>
+        <div class=weatherIcon></div>
+        <p>Winds blowing at <span class = windDirection></span>&deg at <span class = windSpeed></span> mph</p>
+    </div>
+</div>
+<div class = middleThird>
+    <p id = welcomeMessage>Welcome to Smart Glass</p>
+    <div class="quoteOfTheDayDiv">
+        <!--<span class = "quoteOfTheDay"></span>-->
+    </div>
+</div>
+<div class=leftThird>
+    <div class=newsFeed>
+        <span class = newsHeader>Happening in your world:</span></br></br>
+        <span id = CNN1 class = news></span></br></br>
+        <span id = CNN2 class = news></span></br></br>
+        <span id = CNN3 class = news></span></br></br>
+        <span class = newsHeader>Sports Section:</span></br></br>
+        <span id = ESPN1 class = news></span></br></br>
+        <span id = ESPN2 class = news></span></br></br>
+        <span id = ESPN3 class = news></span></br></br>
+        <span class = newsHeader>Here's what Google knows:</span></br></br>
+        <span id = Google1 class = news></span></br></br>
+        <span id = Google2 class = news></span></br></br>
+        <span id = Google3 class = news></span></br></br>
+    </div>
+</div>
+
+<div class = bottomDiv>
+    <!--<div class="quoteOfTheDay"></div>-->
+    <span id = famousQuote class = news></span></br>
+    <span id = famousAuthor class = news></span>
+</div>
+</body>
+</html>
