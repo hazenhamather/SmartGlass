@@ -6,13 +6,13 @@ getWeather(count);
 getCNN();
 getESPN();
 getGoogle();
-// getFamousQuote();
+getFamousQuote();
 console.log("ajax about to execute");
 setInterval(getWeather,1000*60*5);
 setInterval(getCNN,1000*60*5.3);
 setInterval(getESPN,1000*60*5.5);
 setInterval(getGoogle,1000*60*5.8);
-// setInterval(getFamousQuote,1000*60*60*6)
+setInterval(getFamousQuote,1000*60*60*6)
 
 function getWeather(count) {
     $.getJSON('http://api.openweathermap.org/data/2.5/forecast/city?id=4265737&APPID=811797f073520b12e9b8f5ee137c9a0d', function (currentWeather) {
